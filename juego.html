@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rompecabezas recargado</title>    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="col-40">
+      <div id="titulo">
+        <h1>Rompecabezas</h1>
+      </div>
+      <div id="Seleccionar">
+        <h2>Seleccionar</h2>
+        <ul class="fuenteTexto">
+          <li>Cantidad de piezas por lado: 
+            <select id="cantidadPiezasPorLado" class="fuenteTexto">
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>     
+          </li>
+          <li>Nivel: 
+            <input type="radio" id="nivel1" name="niveles" value="6" checked="checked">
+              <label for="nivel1"><span><span></span></span>Fácil</label>
+            <input type="radio" id="nivel2" name="niveles" value="5">
+              <label for="nivel2"><span><span></span></span>Intermedio</label>
+            <input type="radio" id="nivel3" name="niveles" value="4">
+              <label for="nivel3"><span><span></span></span>Dificil</label>
+          </li>
+        </ul>
+      </div>
+      <div id="instrucciones">
+        <h2>Instrucciones</h2>
+        <ul class="fuenteTexto">
+          <li>Mover las piezas presionando las teclas de flechas</li>
+          <li>Encontrar el orden correcto de las piezas</li>
+        </ul>
+      </div> 
+      <p class="fuenteTexto">Movimientos restantes:</p> 
+      <div id="contadorDeMovimientos" class="fontContadorMovimientos">
+      </div>
+      <button id="mezclarNuevamente" class="button turquoise">Mezclar</button>            
+    </div>
+    <div class="col-60">
+      <canvas id="miCanvas" width="600" height="600"></canvas>
+    </div>
+    <footer class="fuenteTexto">
+      <p>Autor: Iván Cabrera</p>
+    </footer>
+    <script src="js/juego.js"></script> 
+  </body>
+</html>

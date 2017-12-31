@@ -1,0 +1,173 @@
+
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;  
+  background-color: #2764a1;
+  background-image: url(../images/black-linen.png);
+}
+ul { 
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  padding: 5px 0;
+}
+li::before {
+  content: "• ";
+  color: #2764a1;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 30px 15px 15px 15px;
+  color: #000;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.col-40{
+  width:40%;
+}
+
+.col-60{
+  width:60%;
+}
+
+.col-60 canvas {
+    display: block;
+}
+
+h1{
+  background-color: #2764a1;
+  color: white;
+  text-align: center;
+}
+
+h2{
+  color: #2764a1;
+}
+
+footer{  
+  background-color: #213a56;
+  padding:2px;
+}
+
+footer p{  
+  color:white;
+  font-size: 20px;  
+  font-style: italic;
+  text-align: center;
+}
+
+.fuenteTexto{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+input[type=radio]:not(old){
+  font-size : 1em;
+  margin    : 0;
+  opacity   : 0;
+  padding   : 0;
+  width     : 2em;
+}
+
+input[type=radio]:not(old) + label{
+  display      : inline-block;
+  line-height  : 1.5em;
+  margin-left  : -2em;  
+}
+
+input[type=radio]:not(old) + label > span{  
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  display          : inline-block;  
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;  
+  vertical-align   : bottom;
+  width            : 0.875em;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  border           : 0.0625em solid #2764a1;
+  border-radius    : 0.125em; 
+  background       : #2e74ba;
+  background-image :    -moz-linear-gradient(#2764a1, #2e74ba);
+  background-image :     -ms-linear-gradient(#2764a1, #2e74ba);
+  background-image :      -o-linear-gradient(#2764a1, #2e74ba);
+  background-image : -webkit-linear-gradient(#2764a1, #2e74ba);
+  background-image :         linear-gradient(#2764a1, #2e74ba);
+  display          : block;  
+  height           : 0.5em;
+  margin           : 0.125em; 
+  width            : 0.5em;
+}
+/****** Boton ******/
+/***** https://www.sitepoint.com/modern-css-buttons/ *******/
+
+.button {
+  border-top: 0;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.turquoise {  
+  background: #2764a1;
+  border-bottom: #2e74ba 3px solid;
+  border-left: #2e74ba 1px solid;
+  border-right: #2e74ba 1px solid;
+  border-radius: 6px;
+  color: white;
+  float: left;
+  font-size: 18px;
+  font-weight: 600;  
+  padding: 7px;
+  text-align: center;  
+}
+
+.turquoise:hover {
+  opacity: 0.8;
+}
+
+.turquoise:active {  
+  background: #2764a1;
+  border-bottom: #2e74ba 1px solid;
+  border-left: #2e74ba 1px solid;
+  border-right: #2e74ba 1px solid;
+  border-radius: 6px;
+  color: white;
+  float: left;  
+  margin-top: 18px;  
+  padding: 7px;  
+  text-align: center;
+}
+
+.fontContadorMovimientos{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;  
+  margin-top:10px;
+  text-align: center;
+}
